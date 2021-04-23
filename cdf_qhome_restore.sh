@@ -3,7 +3,7 @@ echo "🤞 STARTING RESTORE"
 dt=$(date '+%d/%m/%Y %H:%M:%S')
 (
     cd $HOME/.qhome
-    gpg -d source.tgz.gpg | tar xz &&
+    gpg -d ./source.tgz.gpg | tar xz &&
     (
         cd ./source
         cp -vrfT . $HOME &&
