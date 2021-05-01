@@ -1,8 +1,8 @@
 #!/bin/bash
 (   
-    mkdir ~/.composer_installer ||
-    cd ~/.composer_installer &&
-    rm -rf * &&
+    mkdir $HOME/.composer_installer ||
+    cd $HOME/.composer_installer &&
+    rm -rf $HOME/.composer_installer/* &&
     sudo apt-get install -y php-cli unzip php-mbstring php-xml &&
     curl -sS https://getcomposer.org/installer -o ./composer-setup.php &&
     COMPOSER_HASH=`curl -sS https://composer.github.io/installer.sig` &&

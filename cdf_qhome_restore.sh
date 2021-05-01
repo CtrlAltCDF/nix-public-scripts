@@ -6,7 +6,7 @@ dt=$(date '+%d/%m/%Y %H:%M:%S')
     gpg -d ./source.tgz.gpg | tar xz &&
     (
         cd ./source
-        cp -vrfT . $HOME &&
+        cp -vrT . $HOME &&
         echo PATH="$(echo \$PATH):$(echo \$HOME)/.qscripts" >> ~/.bashrc &&
         source ~/.bashrc &&
         echo "✅ RESTORE COMPLETE"
