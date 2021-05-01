@@ -7,6 +7,7 @@ cdf_scripts_make_exec.sh
     git branch -M main &&
     git remote remove origin &&
     git remote add origin git@callum.github.com:flossflamingo/public-scripts.git &&
+    git pull origin main &&
     git add . &&
     git commit -m "backup $dt" &&
     git push -u origin main &&
