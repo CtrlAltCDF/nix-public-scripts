@@ -1,3 +1,3 @@
 #!/bin/bash
-echo PATH="\$PATH:\$HOME/.scripts" >> ~/.bashrc
+echo PATH="$(echo \$PATH):$(echo \$HOME)/.scripts" >> ~/.bashrc
 source ~/.bashrc
