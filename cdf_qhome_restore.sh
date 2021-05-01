@@ -7,6 +7,8 @@ dt=$(date '+%d/%m/%Y %H:%M:%S')
     (
         cd ./source
         cp -vrfT . $HOME &&
+        echo PATH="$PATH:$HOME/.qscripts" >> ~/.bashrc &&
+        source ~/.bashrc &&
         echo "✅ RESTORE COMPLETE"
     )
 )
