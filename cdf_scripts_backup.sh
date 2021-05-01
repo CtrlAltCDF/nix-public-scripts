@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "🤞 STARTING BACKUP"
 dt=$(date '+%d/%m/%Y %H:%M:%S')
+cdf_scripts_make_exec.sh
 (
     cd $HOME/.scripts/
     git branch -M main &&
